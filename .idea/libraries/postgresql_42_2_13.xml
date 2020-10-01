@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="postgresql-42.2.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/BscWebpage/out/artifacts/BscWebpage_war_exploded/WEB-INF/postgresql-42.2.13.jar!/" />
+      <root url="file://$PROJECT_DIR$/Software-Engineering-master/BscWebpage/out/artifacts/BscWebpage_war_exploded" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/postgresql-42.2.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

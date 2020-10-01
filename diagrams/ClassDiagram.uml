@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1520.0" y="652.0">com</node>
+    <node x="1517.0" y="417.0">netscape</node>
+    <node x="361.0" y="132.0">StudentUtil</node>
+    <node x="721.0" y="132.0">Meetings</node>
+    <node x="1403.5" y="296.0">SupReport</node>
+    <node x="207.0" y="417.0">UploadServlet</node>
+    <node x="0.0" y="132.0">GradeSubmission</node>
+    <node x="344.6815476190476" y="296.0">StudentDets</node>
+    <node x="0.0" y="749.0">sun</node>
+    <node x="1256.0" y="417.0">groovyjarjarasm</node>
+    <node x="1347.0" y="652.0">java</node>
+    <node x="18.0" y="417.0">common</node>
+    <node x="1166.0" y="652.0">javax</node>
+    <node x="1111.0" y="144.0">mainPkg</node>
+    <node x="599.0" y="652.0">javafx</node>
+    <node x="205.0" y="652.0">WEB-INF</node>
+    <node x="402.0" y="652.0">jakarta</node>
+    <node x="30.0" y="519.0">jxl</node>
+    <node x="628.7142857142858" y="0.0">dbConn</node>
+    <node x="788.0" y="652.0">oracle</node>
+    <node x="165.0" y="749.0">org</node>
+    <node x="1028.5" y="296.0">Login</node>
+    <node x="0.0" y="652.0">META-INF</node>
+    <node x="330.0" y="749.0">jdk</node>
+    <node x="977.0" y="652.0">groovy</node>
+    <node x="939.0" y="424.701171875">groovyjarjarcommonscli</node>
+    <node x="632.0" y="429.0345052083333">groovyjarjarantlr</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="StudentUtil" target="dbConn">
+      <point x="0.0" y="-38.0" />
+      <point x="531.0" y="112.0" />
+      <point x="700.7142857142858" y="112.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="mainPkg" target="mainPkg">
+      <point x="-66.5" y="26.0" />
+      <point x="1120.5" y="216.0" />
+      <point x="1091.0" y="216.0" />
+      <point x="1091.0" y="183.0" />
+      <point x="-76.0" y="13.0" />
+    </edge>
+    <edge source="groovyjarjarantlr" target="groovyjarjarantlr">
+      <point x="-77.33333333333333" y="26.0" />
+      <point x="670.6666666666666" y="501.0345052083333" />
+      <point x="612.0" y="501.0345052083333" />
+      <point x="612.0" y="472.36783854166663" />
+      <point x="-116.0" y="17.333333333333332" />
+    </edge>
+    <edge source="SupReport" target="mainPkg">
+      <point x="-124.0" y="-38.0" />
+      <point x="1465.5" y="266.0" />
+      <point x="1234.5" y="266.0" />
+      <point x="47.5" y="26.0" />
+    </edge>
+    <edge source="StudentDets" target="mainPkg">
+      <point x="0.0" y="-38.0" />
+      <point x="514.6815476190476" y="256.0" />
+      <point x="1158.5" y="256.0" />
+      <point x="-28.5" y="26.0" />
+    </edge>
+    <edge source="Meetings" target="dbConn">
+      <point x="0.0" y="-38.0" />
+      <point x="891.0" y="112.0" />
+      <point x="721.2857142857142" y="112.0" />
+      <point x="20.571428571428555" y="26.0" />
+    </edge>
+    <edge source="Login" target="mainPkg">
+      <point x="88.75" y="-38.0" />
+      <point x="1294.75" y="276.0" />
+      <point x="1215.5" y="276.0" />
+      <point x="28.5" y="26.0" />
+    </edge>
+    <edge source="mainPkg" target="dbConn">
+      <point x="0.0" y="-26.0" />
+      <point x="1187.0" y="102.0" />
+      <point x="741.8571428571429" y="102.0" />
+      <point x="41.142857142857224" y="26.0" />
+    </edge>
+    <edge source="SupReport" target="dbConn">
+      <point x="124.0" y="-38.0" />
+      <point x="1713.5" y="246.0" />
+      <point x="1485.389880952381" y="246.0" />
+      <point x="1485.389880952381" y="92.0" />
+      <point x="762.4285714285716" y="92.0" />
+      <point x="61.71428571428578" y="26.0" />
+    </edge>
+    <edge source="jxl" target="jxl">
+      <point x="-30.0" y="26.0" />
+      <point x="60.0" y="591.0" />
+      <point x="10.0" y="591.0" />
+      <point x="10.0" y="558.0" />
+      <point x="-60.0" y="13.0" />
+    </edge>
+    <edge source="dbConn" target="dbConn">
+      <point x="-61.71428571428572" y="26.0" />
+      <point x="639.0" y="72.0" />
+      <point x="608.7142857142858" y="72.0" />
+      <point x="608.7142857142858" y="26.0" />
+      <point x="-72.0" y="-0.0" />
+    </edge>
+    <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli">
+      <point x="-68.0" y="26.0" />
+      <point x="1007.0" y="496.701171875" />
+      <point x="919.0" y="496.701171875" />
+      <point x="919.0" y="463.701171875" />
+      <point x="-136.0" y="13.0" />
+    </edge>
+    <edge source="GradeSubmission" target="dbConn">
+      <point x="0.0" y="-38.0" />
+      <point x="170.0" y="92.0" />
+      <point x="659.5714285714287" y="92.0" />
+      <point x="-41.14285714285711" y="26.0" />
+    </edge>
+    <edge source="jxl" target="common">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="StudentDets" target="dbConn">
+      <point x="-113.33333333333326" y="-38.0" />
+      <point x="401.34821428571433" y="276.0" />
+      <point x="350.5" y="276.0" />
+      <point x="350.5" y="102.0" />
+      <point x="680.1428571428571" y="102.0" />
+      <point x="-20.571428571428555" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6921438082556591" x="774.0359753751443" y="391.0034628703347" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
