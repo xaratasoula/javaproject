@@ -44,7 +44,5 @@
 <form action="index.jsp">
     <button type='submit' value='Logout'>Logout</button>
 </form>
-
-
 </body>
 </html>

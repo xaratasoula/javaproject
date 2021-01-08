@@ -10,8 +10,10 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="postgresql-42.2.13" />
           <element id="file-copy" path="$PROJECT_DIR$/Software-Engineering-master/BscWebpage/web/WEB-INF/lib/postgresql-42.2.13.jar" />
+          <element id="library" level="project" name="lib" />
         </element>
       </element>
+      <element id="library" level="project" name="postgresql-42.2.13" />
     </root>
   </artifact>
 </component>

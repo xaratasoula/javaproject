@@ -34,13 +34,11 @@
 <jsp:include page="/StudentDets"></jsp:include>
 
 <script>
-    function meet(){
+    function meeting(){
         document.getElementById("meeting").hidden = false;
         document.getElementById("label").hidden = false;
-        document.getElementById("meeting").hidden = false;
         document.getElementById("ok").hidden = false;
-        document.getElementById("am2").value = document.getElementById("am").innerHTML;
-
+        document.getElementById("parAM").value=document.getElementById("am").innerHTML;
     }
     function finalGrd() {
         document.createElement("changeGrade");
@@ -55,13 +53,13 @@
 <table>
     <br>
     <tr>
-        <td> <input type='submit' value='Arrange meeting' class= 'button' onclick="meet()"/> </td>
+        <td> <input type='submit' value='Arrange meeting' class= 'button' onclick="meeting()"/> </td>
         <td></td>
         <td><input type = 'submit' class= 'button' id = 'changeBtn' value = 'Change grade' onclick="finalGrd()"></td>
         <form method="post" action="${pageContext.request.contextPath}/GradeSubmission">
             <td><input type='submit' class='button' id = 'submitBtn'  value = 'Submit grade' hidden></td>
-            <td><input type="text" name = "am" id = 'parameterAM'  hidden ></td>
             <td><input type = 'number' min = '0' max = '10' name = 'newGrade' id = 'changeGrade' hidden></td>
+            <input type='text' id="parameterAM" name =  "am" hidden/>
         </form>
     </tr>
     <div >
@@ -69,23 +67,21 @@
             <label id = "label" hidden>Meeting on date: </label>
         </td>
             <td></td>
-            <td><form method="POST" action="/Meetings" enctype="multipart/form-data">
-                <input type='date' id="meeting" name =  "meeting" hidden/>
-                <input type='text' id="am2" name =  "am2" hidden/>
-                <input id ="ok" type="submit" value="submit" hidden/>
+            <td>
+                <form method="post" action="${pageContext.request.contextPath}/Meetings">
+                    <input type='date' id="meeting" name =  "meeting" min = "2020-10-01" hidden/>
+                    <input id ="ok" class = 'button' type="submit" value="Submit" hidden/>
+                    <input type='text' id="parAM" name =  "am" hidden/>
 
-
-
-            </form>
+                </form>
             </td>
         </tr>
     </div>
+
     <td>
         <form action="index.jsp">
             <input type='submit' class = 'button' value='Logout'>
         </form>
-
-            <a href ="DownloadServlet">Download</a>
     </td>
     </tr>
 </table>

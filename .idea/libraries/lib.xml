@@ -1,69 +1,10 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/el-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-core-api-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/woodstox-core-asl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/policy.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-components-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-components-ui.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/primefaces-6.1-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jaxws-rt.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/mail.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/saaj-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-components-api-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jstl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jxl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/icefaces-ace.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/icefaces.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/mimepull.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/krysalis-jCharts-1.0.0-alpha-1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-core-impl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/portlet2-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/saaj-impl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/FastInoset.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/icefaces-compat.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/cssparser.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/commons-beanutils.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.annotation_2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-core-impl-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.annotation.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/ha-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/gmbal-api-only.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.websocket-api-1.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.servlet.jsp.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/stax2-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jaxb-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.faces-2.4.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.servlet.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/poi-3.7.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jaxb-xjc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.annotation_3.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-core-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/management-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jaxws-tools.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/richfaces-components-ui-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jaxb-impl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/stax-ex.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jaxws-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jcommon.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jfreechart.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/jsr181-api.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/commons-digester.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/el-api-2.2.1-b03.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/javax.websocket-client-api-1.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/portletfaces-bridge-2.0.2-ice-7875.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/openfaces.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/streambuffer.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/primefaces-6.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/commons-collections_2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/sac.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/icepush.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/commons-logging.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/FastInfoset.jar!/" />
-      <root url="jar://$PROJECT_DIR$/Software-Engineering-master/seng/servlet/lib/commons-collections.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Apache Software Foundation/Tomcat 10.0/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../Program Files/Apache Software Foundation/Tomcat 10.0/lib" recursive="false" />
   </library>
 </component>

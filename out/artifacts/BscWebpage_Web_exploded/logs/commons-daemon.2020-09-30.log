@@ -1,0 +1,9 @@
+[2020-09-30 17:30:05] [info]  [ 4408] Apache Commons Daemon procrun (1.2.2.0 64-bit) started.
+[2020-09-30 17:30:06] [info]  [ 4408] Running Service 'Tomcat10'...
+[2020-09-30 17:30:06] [info]  [ 5276] Starting service...
+[2020-09-30 17:30:11] [info]  [ 5276] Service started in 4529 milliseconds.
+[2020-10-02 03:42:58] [info]  [10060] Console SHUTDOWN event signaled.
+[2020-10-02 03:42:58] [info]  [10060] Stopping service...
+[2020-10-02 03:42:59] [info]  [10060] Service stop thread completed.
+[2020-10-02 03:42:59] [info]  [ 4408] Run service finished.
+[2020-10-02 03:42:59] [info]  [ 4408] Apache Commons Daemon procrun finished.

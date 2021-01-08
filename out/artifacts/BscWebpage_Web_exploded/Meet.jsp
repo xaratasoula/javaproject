@@ -1,9 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ageli
-  Date: 28-Sep-20
-  Time: 4:43 PM
-  To change this template use File | Settings | File Templates.
+%--
+Created by IntelliJ IDEA.
+User: ageli
+Date: 28-Sep-20
+Time: 4:43 PM
+To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

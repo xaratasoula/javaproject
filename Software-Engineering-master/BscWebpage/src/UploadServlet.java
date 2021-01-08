@@ -1,4 +1,5 @@
 import dbConn.UserrDAO;
+import mainPkg.Student;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -22,13 +23,16 @@ public class UploadServlet extends HttpServlet {
             InputStream is = part.getInputStream();
             boolean succs =uploadFile(is,path);
             if(succs){
-                out.println(id + "File Uploaded to this Directory" +path);
-                UserrDAO.Prog(id);
+                out.println("<script>alert('File Uploaded');window.history.back();</script>");
 
 
+
+
+                Student.Prog(id);
             }else{
-                out.println("error");
+                out.println("<script>alert('Error in uploading the file...');window.history.back();</script>");
             }
+
         }
     }
     private static String getSubmittedFileName(Part part) {
@@ -61,3 +65,9 @@ public class UploadServlet extends HttpServlet {
 
     }
 }
+
+
+
+
+
+

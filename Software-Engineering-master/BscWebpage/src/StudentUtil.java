@@ -1,4 +1,5 @@
-import dbConn.UserrDAO;
+import mainPkg.Student;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,9 +15,10 @@ public class StudentUtil extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-        String id = request.getParameter("id");
+        String am = request.getParameter("id");
         PrintWriter writer = response.getWriter();
-        ResultSet rs = UserrDAO.GetStudentsWork(id);
+        Student student = new Student(am,request.getParameter("password"));
+        ResultSet rs = student.GetStudentsWork(am);
 
         writer.println("<!DOCTYPE html><html>");
         writer.println("<head>");
@@ -28,7 +30,7 @@ public class StudentUtil extends HttpServlet {
         writer.println("<body>");
         writer.println("<div class =\"w3-container\">");
         writer.println("<table class = \"w3-table w3-bordered\">");
-        writer.println("<h1 id = 'am' style = 'font-family:Calibri;'>"+id+"</h1>");
+        writer.println("<h1 id = 'am' style = 'font-family:Calibri;'>"+am+"</h1>");
         writer.println("<tr><td><b>Supervisor's Fullname</b></td>");
         writer.println("<td><b>Supervisor's E-mail</b></td>");
         writer.println("<td><b>Bachelor Thesis</b></td>");
@@ -36,6 +38,7 @@ public class StudentUtil extends HttpServlet {
         writer.println("<td><b>Programming Language</b></td>");
         writer.println("<td><b>Tools</b></td>");
         writer.println("<td><b>Progress</b></td>");
+        writer.println("<td><b>Meeting</b></td>");
         writer.println("<td><b>Grade</b></td></tr>");
         try {
             while (rs.next()) {
@@ -46,6 +49,8 @@ public class StudentUtil extends HttpServlet {
                 writer.println("<td>" + rs.getString("prog_languages") + "</td>");
                 writer.println("<td>" + rs.getString("tools") + "</td>");
                 writer.println("<td>" + rs.getString("progress") + "</td>");
+                if(rs.getString("meeting")!= "-"){ writer.println("<td>" + rs.getString("meeting") + "</td>");}
+                else{  writer.println("<td> None </td>");}
                 writer.println("<td>" + rs.getString("grade") + "</td></tr>");
 
             }
@@ -58,7 +63,6 @@ public class StudentUtil extends HttpServlet {
         writer.println("</html>");
 
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

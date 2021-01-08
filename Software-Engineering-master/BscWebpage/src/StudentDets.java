@@ -1,4 +1,5 @@
-import dbConn.UserrDAO;
+import mainPkg.Report;
+import mainPkg.Supervisor;
 import mainPkg.User;
 
 import javax.servlet.RequestDispatcher;
@@ -18,10 +19,11 @@ public class StudentDets extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
-        String am = (String) request.getParameter("am");
-        User user = new User(am,request.getParameter("password"));
+        String am =(String)request.getParameter("am");
+
+        Report report = new Report(am);
         PrintWriter writer = response.getWriter();
-        ResultSet rs = UserrDAO.GetSuperReport(am);
+        ResultSet rs = report.GetSuperReport(am);
 
         writer.println("<!DOCTYPE html><html>");
         writer.println("<head>");
@@ -44,7 +46,6 @@ public class StudentDets extends HttpServlet {
         writer.println("<td><b>Tools</b></td>");
         writer.println("<td><b>Progress</b></td>");
         writer.println("<td><b>Meeting</b></td>");
-        writer.println("<td><b>Project</b></td>");
         writer.println("<td><b>Grade</b></td></tr>");
 
         try {
@@ -57,9 +58,8 @@ public class StudentDets extends HttpServlet {
                 writer.println("<td>" + rs.getString("prog_languages") + "</td>");
                 writer.println("<td>" + rs.getString("tools") + "</td>");
                 writer.println("<td>" + rs.getString("progress") + "</td>");
-                writer.println("<td>" + rs.getString("meeting") + "</td>");
-                writer.println("<td>" + rs.getString("project") + "</td>");
-
+                if(rs.getString("meeting")!= "-"){ writer.println("<td>" + rs.getString("meeting") + "</td>");}
+                else{  writer.println("<td> None </td>");}
                 writer.println("<td><form><p id= 'grade'>"+ rs.getString("grade") + "</p></form></td></tr>");
 
             }
@@ -67,7 +67,6 @@ public class StudentDets extends HttpServlet {
         }catch (SQLException e){
             e.printStackTrace();
         }
-        writer.println("<td><b>Progress</b></td>");
         writer.println("</table>");
         writer.println("</div>");
         writer.println("</body>");
@@ -76,11 +75,6 @@ public class StudentDets extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd = request.getRequestDispatcher(request.getContextPath()+ "/GradeSubmission");
-        rd.forward(request,response);
-        System.out.println(request.getParameter("changeGrade"));
     }
-
-
 
 }

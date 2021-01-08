@@ -44,36 +44,28 @@
     function upload() {
         document.getElementById("file").hidden = false;
         document.getElementById("upl").hidden = false;
-
-
+        document.getElementById("parameterAM").hidden = true;
+        document.getElementById("parameterAM").value = document.getElementById("am").innerHTML;
     }
     function click(){
         document.getElementById("id").value = document.getElementById("id").innerHTML;
     }
-
 </script>
 <table>
     <tr>
-        <td>
-            <input type='submit' class='button' value='Meetings' class= 'button' /><br>
-        </td>
-        <td></td>
+        <td><input type="submit" class="button" value="Upload my Work" onclick="upload()"></td>
+        <form method="POST" action="${pageContext.request.contextPath}/UploadServlet" enctype="multipart/form-data">
+        <td>  <input type='file' id = 'file' class = 'button' accept=".zip" name="file" onclick="click()" hidden/> </td>
+        <td>  <input type="submit" id = 'upl' class = 'button' value="Submit" hidden/></td>
+        <td> <input type='hidden' name = "id" id = "id" /> </td>
+        </form>
+        </tr>
 
-    </tr>
     <tr>
         <td>
             <form action="index.jsp">
                 <input type='submit' class = 'button' value='Logout'>
             </form>
-        <td>
-        <td>
-            <form method="POST" action="${pageContext.request.contextPath}/UploadServlet" enctype="multipart/form-data">
-                <input type='file' class = 'button' accept=".zip" name="file" on onclick="click()"/>
-                <input type="submit" class = 'button' value="upload"/>
-                <input type='text' id="id" name =  "id" hidden/>
-
-            </form>
-        </td>
     </tr>
 </table>
 </body>

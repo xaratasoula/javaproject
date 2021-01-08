@@ -11,12 +11,21 @@ public class User {
     private String id;
     private String pass;
     private String fullname;
+    static Connection con;
+    static PreparedStatement stmt;
 
+    public User() {
+        this.pass = "NotSet";
+        this.id = "NotSet";
+    }
 
     public User(String id, String pass) {
         this.id = id;
         this.pass = pass;
     }
+
+
+
     public String getFullname(){ return fullname; }
 
     public String getId() {

@@ -9,12 +9,11 @@
 
 <html>
 <head>
-  <title>UniPi-CS: Bcs Thesis Status</title>
+    <title>UniPi-CS: Bcs Thesis Status</title>
 </head>
 <body>
 <style>
-    body { font-family: Calibri; font-size: 18;}
-
+    body { font-family: Calibri; }
     /* Full-width input fields */
     input[type=text], input[type=password] {
         width: 100%;
@@ -24,7 +23,6 @@
         border: 1px solid #ccc;
         box-sizing: border-box;
     }
-
     /* Set a style for all buttons */
     .button {
         background-color: #05125c;
@@ -34,11 +32,9 @@
         border: none;
         cursor: pointer
     }
-
     .button:hover {
         opacity: 0.8;
     }
-
 </style>
 <h1>Welcome to the Bachelor Thesis Status Platform of the University of Pireaus!</h1>
 <img src="${pageContext.request.contextPath}/unipi.jpg"  style="width: 430px; height: 150px;">
